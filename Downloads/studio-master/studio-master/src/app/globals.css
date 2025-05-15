@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 224 71.4% 4.1%; /* Dark Blue/Almost Black for text */
+
+    --card: 0 0% 98%; /* Subtle off-white for cards */
+    --card-foreground: 224 71.4% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+
+    --primary: 180 100% 25.1%; /* Teal Green (#008080) */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+
+    --secondary: 220 14.3% 95.9%; /* Very Light Gray for secondary elements */
+    --secondary-foreground: 180 100% 25.1%; /* Teal text on secondary */
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    --accent: 177 69.8% 40.4%; /* Brighter Teal (#20B2AA) for accents */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 85%; /* Slightly darker border */
+    --input: 220 13% 88%;
+    --ring: 177 69.8% 40.4%; /* Accent Teal for rings */
+
+    --radius: 0.5rem;
+
+    /* Sidebar variables - kept for consistency though not primary focus for landing page */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 180 100% 25.1%; 
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 177 69.8% 90%; /* Lighter accent for sidebar */
+    --sidebar-accent-foreground: 180 100% 25.1%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 177 69.8% 40.4%;
+  }
+
+  .dark {
+    /* Keeping dark mode variables, but primary design is light */
+    --background: 224 71.4% 4.1%;
+    --foreground: 0 0% 98%;
+
+    --card: 224 71.4% 5.1%; /* Darker card for dark mode */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 180 100% 25.1%; 
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 13% 15%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 177 69.8% 40.4%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 25%; /* Adjusted border for dark mode */
+    --input: 220 13% 20%;
+    --ring: 177 69.8% 40.4%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 177 69.8% 40.4%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 177 69.8% 40.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
